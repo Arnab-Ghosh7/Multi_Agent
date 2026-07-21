@@ -1,0 +1,58 @@
+# ==========================================
+# Multi-Agent AI Support Assistant - .gitignore
+# ==========================================
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+bin/
+lib/
+include/
+
+# IDEs & Editor Settings
+.vscode/
+.idea/
+.refact/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Frontend Dependencies & Build Output
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+.npm/
+.eslintcache
+
+# Database & Vector Index Persistence
+*.sqlite3
+*.db
+backend/database/db.sqlite3
+backend/rag/vectorstore.pkl
+
+# Environment Variables & API Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs & Temporary Files
+*.log
+logs/
+temp/
+tmp/

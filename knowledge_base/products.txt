@@ -1,0 +1,23 @@
+AuraGlow Electronics - Product Catalog & Pricing
+
+1. AuraGlow Pro Projector
+- Price: $299.99
+- Description: Smart 4K UHD home theater projector with built-in speakers and streaming apps.
+- Features: 3000 lumens, HDR10, dual-band Wi-Fi, Bluetooth 5.0, screen size up to 150 inches.
+- Color: Pearl White.
+
+2. AuraGlow Beam Soundbar
+- Price: $129.99
+- Description: Compact TV soundbar with Dolby Atmos and deep bass subwoofers.
+- Features: 100W output, HDMI ARC, optical input, Bluetooth, remote control.
+- Color: Charcoal Black.
+
+3. AuraGlow Ambient Light Strips
+- Price: $39.99
+- Description: Smart RGBIC LED strip lights that sync with TV audio.
+- Features: App control, voice assistant integration (Google Home, Alexa), 16 million colors, length 10m.
+
+4. AuraGlow Hub Controller
+- Price: $79.99
+- Description: Central smart home console to control all AuraGlow appliances.
+- Features: 5-inch touch screen, Zigbee 3.0, Wi-Fi, built-in battery backup.

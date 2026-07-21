@@ -1,0 +1,27 @@
+AuraGlow Electronics - AuraGlow Pro Projector User Manual
+
+1. Package Contents
+- AuraGlow Pro Projector
+- Remote Control (requires 2 AAA batteries)
+- Power Adapter
+- HDMI Cable
+- Quick Start Guide
+
+2. Setting Up Your Projector
+- Connect the Power Adapter to the projector and plug it into a power outlet.
+- Press the Power Button on top of the projector or the remote.
+- Connect your device (computer, console, streaming stick) via the HDMI port.
+- Adjust the Focus Ring located near the lens until the image is clear.
+- Use the Keystone Correction slider on the side to align the image angles.
+
+3. Connecting to Wi-Fi
+- Go to Settings > Network > Wi-Fi.
+- Select your wireless network and enter the password.
+- A green checkmark will appear when connected.
+
+4. Troubleshooting
+- No Image: Ensure cables are plugged in and the lens cap is removed. Check if the source device is powered on.
+- Blurry Image: Rotate the Focus Ring. Ensure the projector is at least 1.5 meters away from the wall.
+- Projector Overheating: Keep the ventilation vents clear. If the indicator light flashes red, turn off the device and let it cool for 30 minutes.
+- Wi-Fi Disconnection: Restart the projector and your router. Ensure the projector is within range of the router.
+- Firmware Updates: Go to Settings > System > Update to download the latest system software.
