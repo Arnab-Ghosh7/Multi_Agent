@@ -1,5 +1,6 @@
 # 🤖 Multi-Agent AI Customer Support Assistant with RAG
 
+[![Author](https://img.shields.io/badge/Author-Arnab%20Ghosh-FF5722?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Arnab-Ghosh7)
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100%2B-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![React](https://img.shields.io/badge/React-18.0%2B-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
@@ -7,7 +8,7 @@
 [![SQLite](https://img.shields.io/badge/SQLite-3.0%2B-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://www.sqlite.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
-An enterprise-grade, full-stack multi-agent AI customer support orchestrator powered by dynamic intent classification, hybrid RAG (Retrieval-Augmented Generation), self-contained SQLite state management, and a custom **Light Sunset Gradient Glassmorphism Web UI**.
+An enterprise-grade, full-stack multi-agent AI customer support orchestrator designed and developed by **Arnab Ghosh**. Powered by dynamic intent classification, hybrid RAG (Retrieval-Augmented Generation), self-contained SQLite state management, and a custom **Light Sunset Gradient Glassmorphism Web UI**.
 
 ---
 
@@ -27,6 +28,7 @@ An enterprise-grade, full-stack multi-agent AI customer support orchestrator pow
   - [Frontend Setup](#frontend-setup)
 - [API Reference](#-api-reference)
 - [Analytics & Execution Trace](#-analytics--execution-trace)
+- [Author & Maintainer](#-author--maintainer)
 - [License](#-license)
 
 ---
@@ -55,9 +57,26 @@ This system solves complex support queries by routing incoming questions through
 
 ### Git Branching Strategy (GitGraph)
 
-The repository follows a structured feature-branch workflow. Below is the commit and release history represented via GitGraph:
+The repository follows a structured feature-branch workflow. Below is the commit and release history represented via an interactive, colorized GitGraph:
 
 ```mermaid
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'git0': '#FF5722',
+    'git1': '#3F51B5',
+    'git2': '#4CAF50',
+    'git3': '#9C27B0',
+    'git4': '#E91E63',
+    'gitBranchLabel0': '#FFFFFF',
+    'gitBranchLabel1': '#FFFFFF',
+    'gitBranchLabel2': '#FFFFFF',
+    'gitBranchLabel3': '#FFFFFF',
+    'gitBranchLabel4': '#FFFFFF',
+    'commitLabelColor': '#1E88E5',
+    'commitLabelBackground': '#E3F2FD'
+  }
+}}%%
 gitGraph
     commit id: "v0.1-init"
     branch develop
@@ -90,39 +109,46 @@ gitGraph
 
 ```mermaid
 flowchart TD
+    classDef clientStyle fill:#FFF3E0,stroke:#FF9800,stroke-width:2px,color:#E65100;
+    classDef backendStyle fill:#E8EAF6,stroke:#3F51B5,stroke-width:2px,color:#1A237E;
+    classDef agentStyle fill:#E8F5E9,stroke:#4CAF50,stroke-width:2px,color:#1B5E20;
+    classDef ragStyle fill:#FFF8E1,stroke:#FFC107,stroke-width:2px,color:#F57F17;
+    classDef llmStyle fill:#F3E5F5,stroke:#9C27B0,stroke-width:2px,color:#4A148C;
+    classDef dbStyle fill:#E0F7FA,stroke:#00ACC1,stroke-width:2px,color:#006064;
+
     subgraph Client ["Frontend Layer (Vite + React)"]
-        UI["Light Sunset Glassmorphism Web App"]
-        Trace["Execution Trace & Source Snippet Viewer"]
-        Analytics["Analytics & CSAT Dashboard"]
-        Settings["LLM Provider Switcher"]
+        UI["Light Sunset Glassmorphism Web App"]:::clientStyle
+        Trace["Execution Trace & Source Snippet Viewer"]:::clientStyle
+        Analytics["Analytics & CSAT Dashboard"]:::clientStyle
+        Settings["LLM Provider Switcher"]:::clientStyle
     end
 
     subgraph Backend ["Backend API Layer (FastAPI)"]
-        API["FastAPI Application Controller"]
-        DB[(SQLite Database<br/>Users, Sessions, Messages, CSAT)]
-        Router{"Agent Router & Intent Classifier"}
+        API["FastAPI Application Controller"]:::backendStyle
+        DB[("SQLite Database<br/>Users, Sessions, Messages, CSAT")]:::dbStyle
+        Router{"Agent Router & Intent Classifier"}:::backendStyle
         
         subgraph Agents ["Specialized AI Agent Swarm"]
-            Billing["💳 Billing & Payment Agent"]
-            Tech["🔧 Technical Support Agent"]
-            Product["📦 Product Catalog Agent"]
-            Complaint["⚠️ Customer Escalation Agent"]
-            FAQ["❓ FAQ & Policy Agent"]
+            Billing["💳 Billing & Payment Agent"]:::agentStyle
+            Tech["🔧 Technical Support Agent"]:::agentStyle
+            Product["📦 Product Catalog Agent"]:::agentStyle
+            Complaint["⚠️ Customer Escalation Agent"]:::agentStyle
+            FAQ["❓ FAQ & Policy Agent"]:::agentStyle
         end
 
         subgraph RAG ["RAG Vector Engine"]
-            Parser["PDF/TXT Document Ingestor"]
-            VectorStore["TF-IDF Vector Index"]
-            KnowledgeBase["Knowledge Base (.txt / .pdf)"]
+            Parser["PDF/TXT Document Ingestor"]:::ragStyle
+            VectorStore["TF-IDF Vector Index"]:::ragStyle
+            KnowledgeBase["Knowledge Base (.txt / .pdf)"]:::ragStyle
         end
 
-        LLMEngine{"LLM Provider Dispatcher"}
+        LLMEngine{"LLM Provider Dispatcher"}:::backendStyle
     end
 
     subgraph ExternalLLM ["LLM Providers"]
-        OfflineMock["🔌 Offline Mock Engine"]
-        Gemini["✨ Google Gemini API"]
-        OpenAI["🤖 OpenAI GPT API"]
+        OfflineMock["🔌 Offline Mock Engine"]:::llmStyle
+        Gemini["✨ Google Gemini API"]:::llmStyle
+        OpenAI["🤖 OpenAI GPT API"]:::llmStyle
     end
 
     UI -->|REST API Requests| API
@@ -298,6 +324,15 @@ The frontend web application provides real-time transparency into how each respo
 
 - **Execution Trace Modal**: Inspect confidence ratings for each domain, see which agents were triggered, and view the precise text snippets retrieved from local documents.
 - **Analytics Dashboard**: Monitor cumulative agent calls, average processing speed, and collect feedback ratings to continuously optimize knowledge base articles.
+
+---
+
+## 👤 Author & Maintainer
+
+Developed with ❤️ by **Arnab Ghosh**
+
+- **GitHub**: [@Arnab-Ghosh7](https://github.com/Arnab-Ghosh7)
+- **Repository**: [https://github.com/Arnab-Ghosh7/Multi_Agent](https://github.com/Arnab-Ghosh7/Multi_Agent)
 
 ---
 
