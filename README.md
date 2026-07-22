@@ -63,18 +63,20 @@ The repository follows a structured feature-branch workflow. Below is the commit
 %%{init: {
   'theme': 'base',
   'themeVariables': {
-    'git0': '#FF5722',
-    'git1': '#3F51B5',
-    'git2': '#4CAF50',
-    'git3': '#9C27B0',
-    'git4': '#E91E63',
+    'git0': '#6366F1',
+    'git1': '#EC4899',
+    'git2': '#F59E0B',
+    'git3': '#10B981',
+    'git4': '#8B5CF6',
     'gitBranchLabel0': '#FFFFFF',
     'gitBranchLabel1': '#FFFFFF',
     'gitBranchLabel2': '#FFFFFF',
     'gitBranchLabel3': '#FFFFFF',
     'gitBranchLabel4': '#FFFFFF',
-    'commitLabelColor': '#1E88E5',
-    'commitLabelBackground': '#E3F2FD'
+    'commitLabelColor': '#1F2937',
+    'commitLabelBackground': '#EEF2FF',
+    'tagLabelColor': '#FFFFFF',
+    'tagLabelBackground': '#EF4444'
   }
 }}%%
 gitGraph
@@ -329,7 +331,7 @@ The frontend web application provides real-time transparency into how each respo
 
 ## 👤 Author & Maintainer
 
-Developed with ❤️ by **Arnab Ghosh**
+Developed by **Arnab Ghosh**
 
 - **GitHub**: [@Arnab-Ghosh7](https://github.com/Arnab-Ghosh7)
 - **Repository**: [https://github.com/Arnab-Ghosh7/Multi_Agent](https://github.com/Arnab-Ghosh7/Multi_Agent)
