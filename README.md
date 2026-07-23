@@ -8,7 +8,7 @@
 [![SQLite](https://img.shields.io/badge/SQLite-3.0%2B-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://www.sqlite.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
-An enterprise-grade, full-stack multi-agent AI customer support orchestrator designed and developed by **Arnab Ghosh**. Powered by dynamic intent classification, hybrid RAG (Retrieval-Augmented Generation), self-contained SQLite state management, and a custom **Light Sunset Gradient Glassmorphism Web UI**.
+
 
 ---
 
