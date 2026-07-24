@@ -53,7 +53,11 @@ This system solves complex support queries by routing incoming questions through
 
 ---
 
+## 🏗️ Architecture & Git Workflow
 
+### Git Branching Strategy (GitGraph)
+
+The repository follows a structured feature-branch workflow. Below is the commit and release history represented via an interactive, colorized GitGraph:
 
 ```mermaid
 %%{init: {
